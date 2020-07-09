@@ -6,7 +6,7 @@ eureka:
     fetch-registry: false       #是否需要拉取服务信息
     service-url:
       defaultZone: http://localhost:7001/eureka/
-ribbon:
-  eureka:
-    enable: true
+  instance:
+    appname: spring-boot-service
+    prefer-ip-address: true
 
