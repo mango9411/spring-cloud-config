@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: fegin
-  cloud:
-    config:
-      enabled: false            #是否连接配置中心
 server:
   port: 8081
 
