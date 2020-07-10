@@ -1,7 +1,11 @@
 server:
   port: 8082
-
+hystrix:
+  metrics:
+    enabled: true
 eureka:
   client:
+    register-with-eureka: true  #是否要注册到其他Server上
+    fetch-registry: true        #是否需要拉取服务信息
     service-url:
       defaultZone: http://localhost:7001/eureka/
